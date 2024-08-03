@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .hoq-blog-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hoq-blog-header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hoq-blog-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hoq-blog-main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hoq-blog-post {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .hoq-blog-post img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hoq-blog-post h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .hoq-blog-post p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hoq-blog-post .read-more {
+            display: block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .hoq-blog-post {
+                flex: 1 1 calc(50% - 20px);
+            }
+
+            .hoq-blog-header h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hoq-blog-post {
+                flex: 1 1 100%;
+            }
+
+            .hoq-blog-header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hoq-blog-header">
+        <h1>My Blog</h1>
+    </div>
+    <div class="hoq-blog-container">
+        <div class="hoq-blog-main-content">
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 1">
+                <h2>Blog Post Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 2">
+                <h2>Blog Post Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 3">
+                <h2>Blog Post Title 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 4">
+                <h2>Blog Post Title 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 5">
+                <h2>Blog Post Title 5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="hoq-blog-post">
+                <img src="https://via.placeholder.com/600x400" alt="Blog Post 6">
+                <h2>Blog Post Title 6</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
